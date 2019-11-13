@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Cart</title>
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <table >
+      <thead>
+        <tr>
+          <th colspan="4"><h1>Ringkasan Pesanan</h1></th>
+        </tr>
+        <tr>
+          <th><h2>Image</h2></th>
+          <th><h2>Nama Barang</h2></th>
+          <th><h2>Jumlah</h2></th>
+          <th><h2>Harga</h2>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://eigerindostore.com/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/9/1/910003973001_2.jpg" alt="" height=100 width=100></img></td>
+          <td>Eiger Riding Torque Watch - Black </td>
+          <td>1</td>
+          <td>IDR 795.000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+              <td colspan="3">Total</td>
+              <td>IDR 795.000</td>
+          </tr>
+      </tfoot>
+    </table>
+    <br>
+    <form>
+        <label id="alamat-pengiriman">Alamat Pengiriman:</label>
+        <input id="alamat-pengiriman" type="text" row="3" col="10" required>
+        <br>
+        <label id="metode-pengiriman">Metode Pengiriman:</label>
+        <select id="metode-pengiriman">
+            <option value="tiki">TIKI</option>
+            <option value="jne">JNE</option>
+            <option value="pos">POS</option>
+        </select>
+        <br>
+        <label id="asuransi-pengiriman">Ingin Menggunakan Asuransi Pengiriman ?</label>
+        <input type="checkbox" name="ya" value="ya"> Ya
+        <br>
+        <br>
+        <input type="submit" value="Selesai,lanjut ke pembayaran">
+        <input type="submit" value="Batalkan">
+       
+    </form>
+</body>
+</html>
+
