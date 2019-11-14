@@ -1,37 +1,44 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Cart</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <link href="./assets/style.css" type="text/css" rel="stylesheet">
 </head>
 <style>
-
+  .cart {text-align: center;}
+  .cart {margin-top: 50px;}
+  .tabel th,td {border: 1px solid rgba(0, 0, 0, 0.5); padding: 10px;}
+  .bold {font-weight: bold;}
+  table {border-collapse: collapse;}
 </style>
-
 <body>
-    <table >
-      <thead>
+  <div id="cart" class="cart">
+<h2>Ringkasan Pesanan</h2>
+    <table align="center" class="tabel">
+      <thead class="tabel-header">
         <tr>
-          <th colspan="4"><h1>Ringkasan Pesanan</h1></th>
-        </tr>
-        <tr>
-          <th><h2>Image</h2></th>
-          <th><h2>Nama Barang</h2></th>
-          <th><h2>Jumlah</h2></th>
-          <th><h2>Harga</h2>
+          <th>Image</th>
+          <th>Nama Barang</th>
+          <th>Jumlah</th>
+          <th>Harga</th>
+          <th>Action</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="tabel-body">
         <tr>
           <td><img src="https://eigerindostore.com/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/9/1/910003973001_2.jpg" alt="" height=100 width=100></img></td>
-          <td>Eiger Riding Torque Watch - Black </td>
+          <td>Aiger Riding Torque Watch - Blue </td>
           <td>1</td>
-          <td>IDR 795.000</td>
+          <td>IDR 795.000</td> 
+          <td>
+            <a href="#" onclick="return false" class="button button-primary">Delete</a>
+          </td>
         </tr>
       </tbody>
-      <tfoot>
+      <tfoot class="tabel-footer bold">
           <tr>
               <td colspan="3">Total</td>
               <td>IDR 795.000</td>
@@ -44,7 +51,7 @@
         <input id="alamat-pengiriman" type="text" row="3" col="10" required>
         <br>
         <label id="metode-pengiriman">Metode Pengiriman:</label>
-        <select id="metode-pengiriman">
+        <select id="metode-pengiriman" required>
             <option value="tiki">TIKI</option>
             <option value="jne">JNE</option>
             <option value="pos">POS</option>
@@ -54,10 +61,10 @@
         <input type="checkbox" name="ya" value="ya"> Ya
         <br>
         <br>
-        <input type="submit" value="Selesai,lanjut ke pembayaran">
-        <input type="submit" value="Batalkan">
-       
+        <a href="./payment.html" target="_blank"><input type="submit" value="Selesai,lanjut ke pembayaran"></a>
+        <a href="./product.html" target="_blank"><input type="submit" value="Lanjutkan Belanja"></a>
     </form>
+  </div>
 </body>
 </html>
 
