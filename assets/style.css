@@ -189,6 +189,7 @@ section{
   margin: 0;
 }
 
+
 .headers .title-banner{
   width: 70%;
   display: block;
@@ -370,4 +371,64 @@ a.button{
   .desk-name{
     display: none;
   }
+}
+/*Fajrin*/
+
+.nama-produk {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.nama-produk h2 {
+  font-family: monospace;
+  background: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  color: white;
+  padding: 14px;
+  text-align: center;
+}
+
+.judul-produk {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-family: monospace;
+}
+
+.all-produk {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.all-produk a {
+  text-decoration: none;
+  list-style: none;
+  font-family: monospace;
+  background: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  color: white;
+  padding: 10px 10px;
+}
+
+.harga {
+  text-align: center;
+  font-family: monospace;
+}
+
+.footer-produk {
+text-align: center;  
+}
+
+.footer-produk a{
+  font-family: monospace;
+  font-size: 20px;
 }
