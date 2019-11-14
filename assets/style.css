@@ -273,6 +273,17 @@ section{
   color: #ffffff;
 }
 
+.button-light-primary{
+  border: 1px solid #2a93a8;
+  background-color: transparent;
+  color: #2a93a8;
+}
+
+.button-light-primary:hover{
+  background-color: #2a93a8;
+  color: #ffffff;
+}
+
 .mr-0{ margin-right: 0 !important; }
 .mr-1{ margin-right: 1rem !important; }
 .mr-2{ margin-right: 2rem !important; }
@@ -393,6 +404,30 @@ section{
   text-align: center;
 }
 
+.payment{
+  padding: 0 5rem;
+}
+
+.description{
+  margin-bottom: 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.id-order{
+  color: #ff0000;
+}
+
+.img-bank{
+  display: block;
+  margin: 0 auto;
+}
+
+.title-bank{
+  text-align: center;
+  font-size: 20px;
+}
+
 footer{
   position: relative;
 }
@@ -450,12 +485,19 @@ footer .copyright p{
 }
 
 @media only screen and (max-width: 600px){
+  body{
+    width: 100% !important;
+  }
   .mobile-name{
     display: block;
   }
 
   .desk-name{
     display: none;
+  }
+
+  table{
+    width: 100% !important;
   }
 }
 /*Fajrin*/
@@ -508,6 +550,14 @@ footer .copyright p{
 .harga {
   text-align: center;
   font-family: monospace;
+  font-size: 17px;
+}
+
+.harga span{
+  font-family: monospace;
+  text-decoration: line-through;
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-produk {

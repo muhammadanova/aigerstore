@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,57 +9,104 @@
   <link type="text/css" href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans" rel="stylesheet">
 </head>
 <style>
-
+  .cart {text-align: center;}
+  .cart {margin-top: 50px;}
+  table{ width: 900px }
+  .tabel th,td {border: 1px solid rgba(0, 0, 0, 0.5); padding: 10px;}
+  .bold {font-weight: bold;}
+  table {border-collapse: collapse;}
 </style>
-
 <body>
-    <table >
-      <thead>
-        <tr>
-          <th colspan="4"><h1>Ringkasan Pesanan</h1></th>
-        </tr>
-        <tr>
-          <th><h2>Image</h2></th>
-          <th><h2>Nama Barang</h2></th>
-          <th><h2>Jumlah</h2></th>
-          <th><h2>Harga</h2>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://eigerindostore.com/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/9/1/910003973001_2.jpg" alt="" height=100 width=100></img></td>
-          <td>Eiger Riding Torque Watch - Black </td>
-          <td>1</td>
-          <td>IDR 795.000</td>
-        </tr>
-      </tbody>
-      <tfoot>
+  <header>
+    <div class="grid-container">
+      <div class="row">
+        <div class="col-2">
+          <div class="left-navbar">
+            <img src="./assets/logos/logos-light.png" alt="/" class="logo-header">
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="navbar right-navbar">
+            <ul class="menus">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="breadcrumb">
+    <div class="grid-container">
+      <div class="row">
+        <div class="col-1">
+          <h3 class="title-breadcrumb">Cart Shop</h3>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-2">
+          <ul class="menu-breadcrumb">
+            <li><a href="product.html">Products &nbsp;&nbsp;/&nbsp;&nbsp; </a></li>
+            <li><span>Cart Shop</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div id="cart" class="cart">
+      <h2>Ringkasan Pesanan</h2>
+      <table align="center" class="tabel">
+        <thead class="tabel-header">
           <tr>
-              <td colspan="3">Total</td>
-              <td>IDR 795.000</td>
+            <th>Image</th>
+            <th>Nama Barang</th>
+            <th>Jumlah</th>
+            <th>Harga</th>
+            <th>Action</th>
           </tr>
-      </tfoot>
-    </table>
-    <br>
-    <form>
-        <label id="alamat-pengiriman">Alamat Pengiriman:</label>
-        <input id="alamat-pengiriman" type="text" row="3" col="10" required>
-        <br>
-        <label id="metode-pengiriman">Metode Pengiriman:</label>
-        <select id="metode-pengiriman">
-            <option value="tiki">TIKI</option>
-            <option value="jne">JNE</option>
-            <option value="pos">POS</option>
-        </select>
-        <br>
-        <label id="asuransi-pengiriman">Ingin Menggunakan Asuransi Pengiriman ?</label>
-        <input type="checkbox" name="ya" value="ya"> Ya
-        <br>
-        <br>
-        <input type="submit" value="Selesai,lanjut ke pembayaran">
-        <input type="submit" value="Batalkan">
-       
-    </form>
+        </thead>
+        <tbody class="tabel-body">
+          <tr>
+            <td><img src="./assets/images/products/product-1.jpg" alt="" height=100 width=100></img></td>
+            <td>Carrier Aiger Type 1</td>
+            <td>1</td>
+            <td>IDR 1.200.000</td> 
+            <td>
+              <a href="#" onclick="return false" class="button button-danger">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot class="tabel-footer bold">
+          <tr>
+            <td colspan="3">Total</td>
+            <td>IDR 1.200.000</td>                 
+          </tr>
+        </tfoot>
+      </table>
+      <br>
+      <form>
+        <div class="mb-1">
+          <label for="alamat-pengiriman">Alamat Pengiriman:</label>
+          <input id="alamat-pengiriman" type="text" row="3" col="10">
+        </div>
+        <div class="mb-1">
+          <label id="metode-pengiriman">Metode Pengiriman:</label>
+          <select id="metode-pengiriman" >
+              <option value="tiki">TIKI</option>
+              <option value="jne">JNE</option>
+              <option value="pos">POS</option>
+          </select>
+        </div>
+        <div class="mb-1">
+          <label id="asuransi-pengiriman">Ingin Menggunakan Asuransi Pengiriman ?</label>
+          <input type="checkbox" name="ya" value="ya"> Ya
+        </div>
+        <a href="./payment.html" class="button button-primary">Selesai, lanjut ke pembayaran</a>
+        <a href="./product.html" class="button button-light-primary">Lanjutkan Belanja</a>
+      </form>
+    </div>
+  </section>
   <footer>
     <div class="body-footer">
       <div class="grid-container">
